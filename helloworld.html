@@ -5,9 +5,9 @@
     <title>Hello world</title>
   </head>
   <body>
-  Eesnimi: <input type="text" id="first-name"><br>
-  Perenimi: <input type="text" id="last-name">
-  <input type="submit" value="Tervita" onclick="welcome()">
+  Eesnimi: <input type="text" id="first-name" onkeyup="welcome()"><br>
+  Perenimi: <input type="text" id="last-name" onkeyup="welcome()">
+
 
   <div id="output"></div>
   <script>
@@ -20,7 +20,7 @@
       //console.error('töötab');
       //saan kätte inputi väärtused
       first_name = document.getElementById('first-name').value;
-      last_name = document.getElementById('first-name').value;
+      last_name = document.getElementById('last-name').value;
 
         console.log(first_name + ' ' + last_name);
           //Kirjutame html elemendi sisse
