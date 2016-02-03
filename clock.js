@@ -4,10 +4,14 @@ window.onload= function(){
 
   var clock = document.getElementById('clock');
 
+  window.setInterval(function(){
+
     writeDate();
 
 
+  }, 500);
 
+    
 };
 //võtab aja ja kirjutab #clock elemendi sisse
 function writeDate(){
@@ -18,7 +22,7 @@ function writeDate(){
   var minutes = today.getMinutes();
 
   var seconds = today.getSeconds();
-  
+
   //muudan #clock elemendi hmtli
     clock.innerHTML = addZeroBefore(hours) + ':' + addZeroBefore(minutes) + ':' + addZeroBefore(seconds);
 
