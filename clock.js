@@ -2,16 +2,16 @@
 
 window.onload= function(){
 
-  var clock = document.getElementById('clock');
+  var clock = document.getElementById('clock').style.color="Blue";
 
   window.setInterval(function(){
-
+//iga 500ms tagant käivitan writeDate´i
     writeDate();
 
 
   }, 500);
 
-    
+
 };
 //võtab aja ja kirjutab #clock elemendi sisse
 function writeDate(){
